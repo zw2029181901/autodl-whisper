@@ -9,7 +9,7 @@
 | AutoDL.Art账号 | 200211（金鳞） |
 | 介绍 | 将音频转成文字和SRT字幕，支持中文、英文、日文及英文翻译。 |
 | 服务端口 | 6006 |
-| 启动命令 | bash /root/autodl-whisper/start.sh |
+| 本批导出镜像启动命令 | bash /root/autodl-active/run-service.sh |
 | 模型容量 | 约0.49GB；模型及输出预留2GB，依赖另计 |
 | 上游 | https://github.com/SYSTRAN/faster-whisper |
 | 许可 | MIT |
