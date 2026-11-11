@@ -1,0 +1,76 @@
+{
+  "prior_standalone_http": {
+    "id": "03-whisper-subtitles",
+    "name": "Whisper 字幕",
+    "status": "passed",
+    "outputs": [
+      "/tmp/gradio/1689ff625843975df14688417594729f5d8f55d49a52f8528365ed76ac3ca53f/20261111-181349-12d0c330f71a.txt",
+      "/tmp/gradio/be57ff07b3d1c225123be0264cee3b40ab354f4412390127396d289be9c18731/20261111-181349-076db39b9705.srt"
+    ],
+    "verification": "Standalone exported environment; Gradio HTTP upload, queue, inference and download",
+    "text": "Hello, welcome to our speech transcription demonstration.",
+    "input": "/root/autodl-tmp/cloud-evidence/spoken-english.wav",
+    "elapsed_seconds": 5.271,
+    "slug": "autodl-whisper",
+    "standalone_directory_bytes": 1331230156,
+    "model_revisions": {
+      "main": "536b0662742c02347bc0e980a01041f333bce120"
+    },
+    "platform_image_saved": false,
+    "published": false
+  },
+  "system_disk_migration": {
+    "verified_at": "2026-11-12T00:11:56.561415+08:00",
+    "slug": "autodl-whisper",
+    "status": "passed",
+    "system_disk_app": "/root/autodl-active",
+    "verification": "Copied model file sizes, contained paths, portable symlinks, pip check, offline model validation and existing HTTP6006 title",
+    "pip_check": "No broken requirements found.",
+    "doctor_output": "Project: 03-whisper-subtitles\nIMPORT OK gradio 5.49.1\nIMPORT OK faster_whisper 1.2.1\nIMPORT OK ctranslate2 4.6.0\nIMPORT OK av 15.1.0\nTORCH 2.8.0+cu128; CUDA runtime 12.8\nGPU unavailable; CPU mode supported\nMODEL OK main: /root/autodl-active/models/main\nHTTP OK: 13 UI components\nThis check does not prove model generation works. Complete the sample in SMOKE_TEST.md.\n",
+    "copied_model_files": [
+      {
+        "path": "models/main/config.json",
+        "bytes": 2370
+      },
+      {
+        "path": "models/main/README.md",
+        "bytes": 1998
+      },
+      {
+        "path": "models/main/vocabulary.txt",
+        "bytes": 459861
+      },
+      {
+        "path": "models/main/tokenizer.json",
+        "bytes": 2203239
+      },
+      {
+        "path": "models/main/model.bin",
+        "bytes": 483546902
+      },
+      {
+        "path": "models/main/deployment-manifest.json",
+        "bytes": 1077
+      }
+    ],
+    "lib64_symlink_preserved": true,
+    "disk_usage": "1278521344\t/root/autodl-active",
+    "prior_standalone_http_inference": "passed; not repeated",
+    "new_model_inference_performed": false,
+    "compute_mode": "no GPU; migration checks only",
+    "autostart": "Same launcher verified on U2Net restored image; no additional per-app reboot test",
+    "platform_image_saved": false,
+    "restored_image_verified": false,
+    "published": false
+  },
+  "platform_image_saved": true,
+  "restored_image_verified": false,
+  "published": false,
+  "image_uuid": "image-cd03170f61",
+  "image_name": "autodl-whisper-20261111",
+  "image_size_gb": 1.91,
+  "review_submitted": true,
+  "review_status": "pending",
+  "review_checked_at": "2026-11-12T00:26:52.8653003+08:00",
+  "community_url": "https://www.autodl.art/i/zw2029181901/autodl-whisper/Whisper-Subtitles"
+}
