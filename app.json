@@ -1,0 +1,38 @@
+{
+  "id": "03-whisper-subtitles",
+  "slug": "autodl-whisper",
+  "name": "Whisper 字幕",
+  "description": "将音频转成文字和SRT字幕，支持中文、英文、日文及英文翻译。",
+  "task": "speech-to-text",
+  "torch": false,
+  "requires_gpu": false,
+  "imports": [
+    "faster_whisper",
+    "ctranslate2",
+    "av"
+  ],
+  "model_gb": 0.49,
+  "disk_gb": 2,
+  "gpu": "CPU INT8模式，不依赖GPU。建议8核CPU、4GB内存起测。",
+  "license": "MIT",
+  "source": "https://github.com/SYSTRAN/faster-whisper",
+  "models": {
+    "main": {
+      "kind": "hf",
+      "required_files": ["config.json","model.bin","tokenizer.json"],
+      "repo": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "allow_patterns": [
+        "*.json",
+        "*.txt",
+        "*.bin",
+        "LICENSE*",
+        "README.md"
+      ]
+    }
+  },
+  "account": {
+    "github": "zw2029181901",
+    "autodl_user": "200211"
+  }
+}
